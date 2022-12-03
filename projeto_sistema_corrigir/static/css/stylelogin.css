@@ -1,0 +1,121 @@
+@charset "utf8";
+
+*RESET*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*INICIANDO O LAYOUT CSS*/
+/*DEF. BODY*/
+body {
+  max-width: 50em;
+  margin: 2em auto;
+}
+/*DEF. MAIN*/
+main {
+  text-align: center;
+  /*font-size: 4em;*/
+  font-size: 20px;
+}
+/*DEF. UM CONTAINER*/
+.container {
+  /*background: #EEE;*/
+  background: #fff;
+  height: 80vh;
+  position: relative;
+}
+/*DEF. UM ELEMENTO PARA O CONTAINER*/
+.elemento {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*ENTRADA DO TIPO TXT*/
+.campoformlogin {
+  width: 100%;
+  padding: 10px 24px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+.campoformlogin :focus {
+  border: 3px solid rgb(131, 141, 184);
+}
+.txtlogin {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+/*BOTÃO*/
+.botaologin {
+  display: inline-block;
+  padding: 10px 24px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #5e85c0;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.botaologin:hover {
+  background-color: #3c1ccc;
+}
+
+.botaologin:active {
+background-color: #3c1ccc;
+box-shadow: 0 5px rgb(100, 120, 122);
+transform: translateY(4px);
+}

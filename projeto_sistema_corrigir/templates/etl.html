@@ -1,0 +1,39 @@
+
+{% extends 'base.html' %}
+<!--bloco da herança do head-->
+  {% block head %}
+    {{ super() }} 
+  {% endblock %}
+
+<!--bloco da herança -->
+{% block content %}
+  <div>
+    <h2 class="tituloform">ETL - EXTRAÇÃO, TRANSFORMAÇÃO E CARREGAMENTO</h2>
+
+    <div>
+      <form id="listaarq" name="listaarq" method="post" action="listaarq"/>
+        <input class="botaolistaarq" type="submit" name="listaarq" id="listaarq" value="Lista Arquivos" />
+      </form>
+    </div>
+    <div>
+      RadioGroup
+      <form id="form1" name="form1" method="post" action="">
+        <p>
+          <label>
+            <input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_0" />
+            Radio
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_1" />
+            Radio</label>
+          <br />
+        </p>
+      </form>
+    </div>
+    <div>
+      Escola arquivo:
+      <input name="arquivo" type="file" />
+    </div>
+  </div>
+{% endblock %}
